@@ -38,25 +38,21 @@ use write_to_file::WriteToFile;
 
 // Vec<u8>
 let buf: Vec<u8> = vec![1u8, 2, 3, 4];
-let expected = buf.clone();
 let path = "target/test/file.bin";
 buf.write_to_file(path).unwrap(); // <- Easy to write!
 
 // &[u8]
 let buf: &[u8] = buf.as_slice();
-let expected = buf.clone();
 let path = "target/test/file.bin";
 buf.write_to_file(path).unwrap(); // <- Easy to write!
 
 // String
 let buf: String = "Nyanko is one of the greatest life.".to_string();
-let expected = buf.clone();
 let path = "target/test/file.txt";
 buf.write_to_file(path).unwrap(); // <- Easy to write!
 
 // &str
 let buf: &str = buf.as_str();
-let expected = buf.clone();
 let path = "target/test/file.txt";
 buf.write_to_file(path).unwrap(); // <- Easy to write!
 ```
