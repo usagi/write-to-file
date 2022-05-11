@@ -1,0 +1,13 @@
+[package]
+name = "write-to-file"
+version = "1.0.0"
+edition = "2021"
+authors = ["USAGI.NETWORK / Usagi Ito <the@usagi.network>"]
+categories = ["rust-patterns", "filesystem"]
+description = "Write to a file, simple helper fn and traits lib crate."
+documentation = "https://docs.rs/fold-license/"
+keywords = ["file", "write", "simple", "easy", "dir"]
+license = "MIT"
+repository = "https://github.com/usagi/fold-license"
+
+[dependencies]
